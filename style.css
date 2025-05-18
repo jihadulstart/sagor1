@@ -1,0 +1,412 @@
+/* Reset and Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e2c;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Loading Animation */
+#loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+  color: #0ff;
+}
+
+.glow {
+  font-size: 5rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  z-index: 1;
+}
+
+.name {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #00ffff;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #ffffffcc;
+}
+
+/* About Section */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  background-color: #1a1a3d;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img img {
+  width: 250px;
+  border-radius: 50%;
+  border: 4px solid #00ffff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.bio {
+  max-width: 600px;
+}
+
+.bio h2, .bio h3 {
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.bio ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bio ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Education Timeline */
+#education {
+  padding: 4rem 2rem;
+  background-color: #121230;
+}
+
+.timeline {
+  border-left: 3px solid #00ffff;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-item .dot {
+  width: 16px;
+  height: 16px;
+  background: #00ffff;
+  border-radius: 50%;
+  position: absolute;
+  left: -26px;
+  top: 5px;
+}
+
+.timeline-content h3 {
+  color: #00ffff;
+}
+
+/* Quote Section */
+#quote {
+  padding: 4rem 2rem;
+  background-color: #0b0b24;
+  text-align: center;
+}
+
+.typewriter {
+  font-size: 2rem;
+  font-style: italic;
+  color: #00ffff;
+}
+
+/* Statistics Section */
+#stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #1e1e3f;
+  padding: 4rem 2rem;
+}
+
+.stat-box {
+  background: #28284e;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+  width: 150px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.stat-box h3 {
+  font-size: 2.5rem;
+  color: #00ffff;
+}
+
+/* Contact Section */
+#contact {
+  padding: 4rem 2rem;
+  background-color: #14142b;
+}
+
+#contact h2 {
+  text-align: center;
+  color: #00ffff;
+  margin-bottom: 2rem;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e1e3f;
+  color: #ffffff;
+}
+
+#contact-form button {
+  padding: 1rem;
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Social Icons */
+#social {
+  background: #0b0b24;
+  padding: 2rem;
+  text-align: center;
+}
+
+.social-icon {
+  margin: 0 1rem;
+  color: #00ffff;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content .name {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stat-box {
+    width: 100px;
+  }
+}
+/* === Statistics Section === */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin: 4rem 2rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+.stat-number {
+  font-size: 2.8rem;
+  color: #00f0ff;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+/* === Responsive Fixes === */
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 1rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 1.2rem;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: #1a1a3d;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h2 {
+  font-size: 3rem;
+  color: #00ffff;
+  margin: 0;
+}
+
+.card p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .card h2 {
+    font-size: 2.2rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 30px 15px;
+  }
+}
+form input,
+form textarea {
+  background-color: #1e1e2f; /* Dark background */
+  color: #00ffff;           /* Cyan text */
+  border: 2px solid #00ffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #888; /* Dimmed placeholder */
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #00ffff;
+  box-shadow: 0 0 8px cyan;
+}
+form button {
+  background: linear-gradient(to right, #00f0ff, #00d0ff);
+  color: #000; /* কালো লেখার রং যাতে contrast ভালো হয় */
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+form button:hover {
+  background: linear-gradient(to right, #00d0ff, #00f0ff);
+  box-shadow: 0 0 12px #00ffff;
+  transform: scale(1.02);
+}
