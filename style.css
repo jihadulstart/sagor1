@@ -420,3 +420,31 @@ a i:hover {
   color: #0e5cba;
   transform: scale(1.1);
 }
+.fb-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px;
+  background: #1877f2;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(24, 119, 242, 0.4);
+}
+
+.fb-button i {
+  margin-right: 10px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.fb-button:hover {
+  background: #145ecb;
+  transform: scale(1.05);
+}
+
+.fb-button:hover i {
+  transform: rotate(360deg);
+}
