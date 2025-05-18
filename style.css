@@ -487,3 +487,13 @@ a i:hover {
 .footer p:hover {
   color: #fff;
 }
+.social-icons a {
+  color: #ccc;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s;
+}
+.social-icons a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
