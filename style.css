@@ -262,7 +262,11 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  overflow: hidden;
+  word-break: break-word;
 }
+
 
 .stat-card:hover {
   transform: translateY(-5px);
@@ -270,11 +274,12 @@ body {
 }
 
 .stat-number {
-  font-size: 2.8rem;
+  font-size: clamp(1.5rem, 6vw, 2.8rem); /* responsive font size */
   color: #00f0ff;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
+
 
 .stat-label {
   font-size: 1rem;
