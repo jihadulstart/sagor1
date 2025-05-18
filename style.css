@@ -410,3 +410,13 @@ form button:hover {
   box-shadow: 0 0 12px #00ffff;
   transform: scale(1.02);
 }
+a i {
+  color: #1877F2; /* Facebook এর নীল রঙ */
+  margin: 10px;
+  transition: 0.3s;
+}
+
+a i:hover {
+  color: #0e5cba;
+  transform: scale(1.1);
+}
